@@ -148,9 +148,9 @@ One of the Table `columns` prop for describing the table's columns, Column has t
 
 ### ColumnGroup
 
-| Property | Description | Type | Default |
-| --- | --- | --- | --- |
-| title | Title of the column group | ReactNode | - |
+| Property | Description               | Type      | Default |
+| -------- | ------------------------- | --------- | ------- |
+| title    | Title of the column group | ReactNode | -       |
 
 ### pagination
 
@@ -198,6 +198,7 @@ Properties for row selection.
 | preserveSelectedRowKeys | Keep selection `key` even when it removed from `dataSource` | boolean | - | 4.4.0 |
 | renderCell | Renderer of the table cell. Same as `render` in column | function(checked, record, index, originNode) {} | - | 4.1.0 |
 | selectedRowKeys | Controlled selected row keys | string\[] \| number\[] | \[] |  |
+| defaultSelectedRowKeys | Selected row keys initially | string\[] \| number\[] | \[] |  |
 | selections | Custom selection [config](#rowSelection), only displays default selections when set to `true` | object\[] \| boolean | - |  |
 | type | `checkbox` or `radio` | `checkbox` \| `radio` | `checkbox` |  |
 | onChange | Callback executed when selected rows change | function(selectedRowKeys, selectedRows) | - |  |
